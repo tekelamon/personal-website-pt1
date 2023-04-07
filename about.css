@@ -1,0 +1,23 @@
+/* SPACING */
+
+/* move content within section */
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    padding: 1.5rem;
+}
+
+/* SIZING */
+
+.text {
+    width: 70%;
+}
+
+.image {
+    width: 30%;
+    min-width: 340px; /* keep text from overlapping as box shrinks */
+}
