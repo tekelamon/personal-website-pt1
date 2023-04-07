@@ -1,3 +1,5 @@
+/* MAIN STYLES */
+
 /* Fit body to full page with soft background */
 body {
     background-color: hsl(220,90%,90%);
@@ -13,25 +15,58 @@ a {
 
 /* Span whole page, darker color */
 header, footer {
-    background-color: hsl(220,40%,35%);
-    width: 100%;
-    text-align: center;
+    background-color: hsl(220,60%,35%);
     color: white;
 }
 
-/* Align text with nav below vv */
-h1 { display: inline; }
-
-/* Horizontal navigation */
-nav ul li { 
-    display: inline;
+/* small spacing */
+main {
+    width: 90%;
+    margin: 0 auto;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
+/* fixed footer */
+footer {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
+/* remove whitespace around p tag */
+footer p {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* NAVIGATION STYLES */
+
+/* Inline navigation */
+h1, nav, nav ul, nav ul li {
+    display: inline-block;
+}
+
+/* remove bullets */
 nav ul {
     list-style-type: none;
+}
+
+/* Spacing for content */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+/* Fit content to parent */
+nav ul li {
+    padding: 1.4rem 1rem;
+}
+  
+/* color change on hover */
+nav ul li:hover {
+    background-color: hsl(330,80%,65%);
 }
