@@ -1,7 +1,35 @@
+/* IMAGE STYLING */
+
+/* contain image within box */
 #img-container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* use width of container to hold shape */
+img {
     width: 100%;
 }
 
-img {
-    width: inherit;
+/* TEXT STYLING */
+
+/* move text onto image */
+#img-container p {
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    color: white;
+    /* slightly opaque background for readability of text */
+    background-color: hsla(0,0%,30%,0.6);
+}
+
+main {
+    text-align: center;
+}
+
+q {
+    display: inline-block;
+    font-family: "Apple Chancery";
+    margin: 0 auto;
 }
